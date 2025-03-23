@@ -9,7 +9,7 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
    For example:
    
    ```html
-   <script src="path/to/ribbon-tile.js"></script>
+   <script src="path/to/ribbon-tile.js" defer></script>
    ```
 3. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
    * Add a `ribbon-width` attribute, this will determine how wide the wibbon is. You
