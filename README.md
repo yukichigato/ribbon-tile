@@ -5,12 +5,37 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
 ## How to use
 
 1. Import `ribbon-tile.js` in your HTML file in any way you see fit.
-2. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
-3. Add a `ribbon-width` attribute, this will determine how wide the wibbon is. You
+   
+   For example:
+   
+   ```html
+   <script src="path/to/ribbon-tile.js"></script>
+   ```
+3. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
+   * Add a `ribbon-width` attribute, this will determine how wide the wibbon is. You
    can write it in px, rem, etc.
-4. Add a `ribbon-space` attribute, which will tell the component how much space it should use overall.
-5. Add a `image-url` attribute, the url to your tile image. The image has to be 1:1 in resolution.
-6. You can optionally add a `gradient-color` attribute that takes a color in any format. This will
+   * Add a `ribbon-space` attribute, which will tell the component how much space it should use overall.
+   * Add a `image-url` attribute, the url to your tile image. The image has to be 1:1 in resolution.
+   * You can optionally add a `gradient-color` attribute that takes a color in any format. This will
    generate a radial gradient which will fade the borders of the ribbon.
-7. Finally, you can optionally add an `animation-duration` attribute that will change the default
-   sideways linear scroll animation's duration. Ensure it's in seconds.
+   * Finally, you can optionally add an `animation-duration` attribute that will change the default
+   sideways linear scroll animation's duration. It must be written in seconds.
+
+   Example:
+
+   ```html
+   <ribbon-tile
+      ribbon-width="6rem" <!-- This can be in px, em... -->
+      ribbon-space="12rem" <!-- This can be in px, em... -->
+      image-url="./public/images/tile.jpg"
+      gradient-color="rgba(1, 1, 1, .5)" <!-- Default colors, rbg, rgba... -->
+      animation-duration="120s"
+   >
+   </ribbon-tile>
+   ```
+
+> [!WARNING]
+> Ensure `ribbon-space` is greater than `ribbon-width` or else things
+> get janky.
+
+   
