@@ -9,6 +9,8 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
    For example:
    
    ```html
+   <!-- index.html -->
+   
    <script src="path/to/ribbon-tile.js" defer></script>
    ```
 3. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
@@ -24,6 +26,8 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
    Example:
 
    ```html
+   <!-- index.html -->
+   
    <ribbon-tile
       ribbon-width="6rem" <!-- This can be in px, em... -->
       ribbon-space="12rem" <!-- This can be in px, em... -->
