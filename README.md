@@ -2,18 +2,21 @@
 
 A Vanilla-JS custom component that creates a ribbon-style repeating tile that you can add to your website.
 
+I know this is pretty basic, but it's something I found myself needing more often than I thought, and I'm too
+lazy to keep re-implementing this from scratch whenever I need it
+
 <center><img src="https://i.ibb.co/ks6L8YH1/ezgif-7a8e89a2accc17.gif"/></center>
 
 ## How to use
 
-1. Import `ribbon-tile.js` in your HTML file in any way you see fit.
+1. Import `RibbonTile.js` in your HTML file in any way you see fit.
    
    For example:
    
    ```html
    <!-- index.html -->
    
-   <script src="path/to/ribbon-tile.js" defer></script>
+   <script src="path/to/RibbonTile.js" defer></script>
    ```
 3. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
    * Add a `ribbon-width` attribute, this will determine how wide the wibbon is. You
@@ -46,5 +49,7 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
 > [!WARNING]
 > Ensure `ribbon-space` is greater than `ribbon-width` or else things
 > get janky.
+> And also, the custom element has to be inside a parent element that has `overflow`
+> set to anything but `visible`.
 
    
