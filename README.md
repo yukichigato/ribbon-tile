@@ -46,10 +46,8 @@ lazy to keep re-implementing this from scratch whenever I need it
    </ribbon-tile>
    ```
 
-> [!WARNING]
-> Ensure `ribbon-space` is greater than `ribbon-width` or else things
-> get janky.
-> And also, the custom element has to be inside a parent element that has `overflow`
+> [!WARNING
+> Ensure that the custom element is inside a parent element that has `overflow`
 > set to anything but `visible`.
 
    
