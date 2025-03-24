@@ -2,6 +2,8 @@
 
 A Vanilla-JS custom component that creates a ribbon-style repeating tile that you can add to your website.
 
+<center><img src="https://i.ibb.co/ks6L8YH1/ezgif-7a8e89a2accc17.gif"/></center>
+
 ## How to use
 
 1. Import `ribbon-tile.js` in your HTML file in any way you see fit.
@@ -20,6 +22,8 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
    * Add a `image-url` attribute, the url to your tile image. The image has to be 1:1 in resolution.
    * You can optionally add a `gradient-color` attribute that takes a color in any format. This will
    generate a radial gradient which will fade the borders of the ribbon.
+   * You can optionally add a `shadow-color` attribute that takes a color in any format. This will
+      generate a shadow below the ribbon of the color of your choice.
    * Finally, you can optionally add an `animation-duration` attribute that will change the default
    sideways linear scroll animation's duration. It must be written in seconds.
 
@@ -29,10 +33,11 @@ A Vanilla-JS custom component that creates a ribbon-style repeating tile that yo
    <!-- index.html -->
    
    <ribbon-tile
-      ribbon-width="6rem" <!-- This can be in px, em... -->
-      ribbon-space="12rem" <!-- This can be in px, em... -->
+      ribbon-width="6rem"
+      ribbon-space="12rem"
       image-url="./public/images/tile.jpg"
-      gradient-color="rgba(1, 1, 1, .5)" <!-- Default colors, rbg, rgba... -->
+      gradient-color="rgba(1, 1, 1, .5)"
+      shadow-colro="rgba(1, 1, 1, .75)"
       animation-duration="120s"
    >
    </ribbon-tile>
