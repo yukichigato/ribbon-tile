@@ -2,6 +2,9 @@
 
 A Vanilla-JS custom component that creates a ribbon-style repeating tile that you can add to your website.
 
+I know this is pretty basic, but it's something I found myself needing more often than I thought, and I'm too
+lazy to keep re-implementing this from scratch whenever I need it
+
 <center><img src="https://i.ibb.co/ks6L8YH1/ezgif-7a8e89a2accc17.gif"/></center>
 
 ## How to use
