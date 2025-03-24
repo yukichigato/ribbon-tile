@@ -9,14 +9,14 @@ lazy to keep re-implementing this from scratch whenever I need it
 
 ## How to use
 
-1. Import `ribbon-tile.js` in your HTML file in any way you see fit.
+1. Import `RibbonTile.js` in your HTML file in any way you see fit.
    
    For example:
    
    ```html
    <!-- index.html -->
    
-   <script src="path/to/ribbon-tile.js" defer></script>
+   <script src="path/to/RibbonTile.js" defer></script>
    ```
 3. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
    * Add a `ribbon-width` attribute, this will determine how wide the wibbon is. You
