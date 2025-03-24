@@ -1,0 +1,21 @@
+{
+  "name": "ribbon-tile",
+  "version": "1.0.0",
+  "description": "A Vanilla-JS component that adds a ribbon style tile to your website.",
+  "main": "RibbonTile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukichigato/ribbon-tile.git"
+  },
+  "keywords": [
+    "web component",
+    "vanilla js",
+    "ui component"
+  ],
+  "author": "yukichigato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yukichigato/ribbon-tile/issues"
+  },
+  "homepage": "https://github.com/yukichigato/ribbon-tile#readme"
+}
