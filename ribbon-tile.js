@@ -9,7 +9,8 @@ class RibbonTile extends HTMLElement {
       ribbon_width: this.getAttribute("ribbon-width"),
       ribbon_space: this.getAttribute("ribbon-space"),
       image_url: this.getAttribute("image-url"),
-      gradient_color: this.getAttribute("gradient") ?? "rgba(1, 1, 1, 0)",
+      gradient_color: this.getAttribute("gradient-color") ?? "rgba(1, 1, 1, 0)",
+      shadow_color: this.getAttribute("shadow-color") ?? "rgba(1, 1, 1, 0)",
       animation_duration: this.getAttribute("animation-duration") ?? "180s",
     };
 
@@ -34,8 +35,6 @@ class RibbonTile extends HTMLElement {
           display: flex;
           justify-content: center;
           align-items: center;
-
-          overflow: visible;
         }
 
         .ribbon {
@@ -43,12 +42,16 @@ class RibbonTile extends HTMLElement {
           height: ${attributes.ribbon_width};
 
           transform-origin: center;
-
+          /*
           background: radial-gradient(
               circle closest-corner at 50% 50%,
               rgba(1, 1, 1, 0) 40%,
               ${attributes.gradient_color} 65%
             ),
+            url("${attributes.image_url}");
+          */
+
+          background: linear-gradient(90deg, ${attributes.gradient_color} 16.5%, rgba(255,255,255,0) 30%, rgba(154,154,154,0) 70%, ${attributes.gradient_color} 84.5%),
             url("${attributes.image_url}");
           background-image: url("${attributes.image_url}")
           background-size: auto, contain;
@@ -57,7 +60,7 @@ class RibbonTile extends HTMLElement {
           background-position: center, center;
           animation: pan ${attributes.animation_duration} linear infinite;
 
-          box-shadow: 0rem 1rem 2rem rgb(197, 197, 197);
+          box-shadow: 0rem 1rem 2rem ${attributes.shadow_color};
         }
 
       </style>
