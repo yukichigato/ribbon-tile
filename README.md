@@ -21,8 +21,8 @@ lazy to keep re-implementing this from scratch whenever I need it
 3. Create a `<ribbon-tile></ribbon-tile>` component inside your document body.
    * Add a `ribbon-width` attribute, this will determine how wide the wibbon is. You
    can write it in px, rem, etc.
-   * Add a `ribbon-space` attribute, which will tell the component how much space it should use overall.
-   * Add a `image-url` attribute, the url to your tile image. The image has to be 1:1 in resolution.
+   * Add a `ribbon-space` attribute, which will tell the component how much vertical space it should use overall. Can be specified in px, rem, etc.
+   * Add a `image-url` attribute, the url to your tile image. The image must be 1:1 in aspect ratio.
    * You can optionally add a `gradient-color` attribute that takes a color in any format. This will
    generate a radial gradient which will fade the borders of the ribbon.
    * You can optionally add a `shadow-color` attribute that takes a color in any format. This will
