@@ -1,6 +1,6 @@
 {
   "name": "ribbon-tile",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Vanilla-JS component that adds a ribbon style tile to your website.",
   "main": "RibbonTile.js",
   "repository": {
